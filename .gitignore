@@ -1,0 +1,39 @@
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+*.egg-info/
+
+# ---------------------------------------------------------------------------
+# Data
+# ---------------------------------------------------------------------------
+# data/processed/ and data/universe_pilot.csv ARE tracked - they are the built
+# dataset. Everything below is either a bulk download or regenerable, and is
+# rebuilt by `python run_all.py`.
+
+# SEC bulk downloads (~2.8 GB) and the HTTP cache
+data/raw/
+
+# Regenerable intermediates (~61 MB)
+data/interim/
+
+# Third-party datasets, re-downloaded by src/phase6_external.py (~45 MB)
+data/external/
+
+# Full-universe artefacts, if a --full run is made
+data/processed/*_full.parquet
+
+# Scratch
+*.log
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini

@@ -1,0 +1,8 @@
+# Normalise line endings so the repo is identical on Windows and Linux.
+* text=auto eol=lf
+
+# Binary artefacts - never touch these.
+*.parquet binary
+*.npz binary
+*.zip binary
+*.xlsx binary
